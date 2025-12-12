@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base;
+@tailwind utilities; 
+@tailwind components; */
+
+@theme inline {
+    --color-bg-1: var(--bg-1);
+}
+
+:root {
+    --bg-1: #79B0E0;
+    --bg-2: #79B0E0;
+    --bg-3: #79B0E0;
+    --bg-4: #79B0E0;
+    --bg-5: #79B0E0;
+    --bg-6: #79B0E0;
+    --bg-7: #79B0E0;
+
+}

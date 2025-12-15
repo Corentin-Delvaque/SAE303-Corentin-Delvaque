@@ -6,13 +6,14 @@
 @tailwind components; */
 
 @theme inline {
-    --color-bg-1: var(--bg-1);
+    --color-bg-blue: var(--bg-blue);
+    --color-bg-yellow: var(--bg-yellow);
     --ff : var(font-family);
 }
 
 :root {
-    --bg-1: #79B0E0;
-    --bg-2: #79B0E0;
+    --bg-blue: #79B0E0;
+    --bg-yellow: #FFE18D;
     --bg-3: #79B0E0;
     --bg-4: #79B0E0;
     --bg-5: #79B0E0;

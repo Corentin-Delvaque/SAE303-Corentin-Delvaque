@@ -5,11 +5,27 @@
 @tailwind utilities; 
 @tailwind components; */
 
+@layer utilities {
+  .bg-sea-sand {
+    background-image: var(--background-image-sea-sand);
+  }
+}
+
+
 @theme inline {
     --color-bg-blue: var(--bg-blue);
     --color-bg-dark-blue: var(--bg-dark-blue);
     --color-bg-yellow: var(--bg-yellow);
+
+
     --color-bg-dark-grey: var(--bg-dark-grey);
+
+
+    --background-image-sea-sand: linear-gradient(
+      180deg,
+      #2B49AD,
+      #FFE18D
+    );
 
     --ff : var(font-family);
 }
@@ -21,7 +37,6 @@
     --bg-dark-grey: #4D4A40;
     --bg-5: #79B0E0;
     --bg-6: #79B0E0;
-    --bg-7: #79B0E0;
 
     font-family: 'Marianne', sans-serif;
 

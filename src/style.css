@@ -9,6 +9,9 @@
   .bg-sea-sand {
     background-image: var(--background-image-sea-sand);
   }
+  .bg-blue-pink {
+    background-image: var(--background-image-blue-pink);
+  }
 }
 
 
@@ -19,6 +22,7 @@
 
 
     --color-bg-dark-grey: var(--bg-dark-grey);
+    --color-bg-grey: var(--bg-grey);
 
 
     --background-image-sea-sand: linear-gradient(
@@ -27,18 +31,22 @@
       #FFE18D
     );
 
+    --background-image-blue-pink: linear-gradient(
+      180deg,
+      #82B0DC,
+      #D5B4B9
+    );
+
     --ff : var(font-family);
 }
 
 :root {
-    --bg-blue: #79B0E0;
-    --bg-dark-blue: #2B49AD;
-    --bg-yellow: #FFE18D;
-    --bg-dark-grey: #4D4A40;
-    --bg-5: #79B0E0;
-    --bg-6: #79B0E0;
-
-    font-family: 'Marianne', sans-serif;
+  --bg-blue: #79B0E0;
+  --bg-dark-blue: #2B49AD;
+  --bg-yellow: #FFE18D;
+  --bg-dark-grey: #4D4A40;
+  --bg-grey: #D9D9D9;
+  font-family: 'Marianne', sans-serif;
 
 }
 

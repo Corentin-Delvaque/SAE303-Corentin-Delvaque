@@ -19,6 +19,7 @@
     --color-bg-blue: var(--bg-blue);
     --color-bg-dark-blue: var(--bg-dark-blue);
     --color-bg-yellow: var(--bg-yellow);
+    --color-bg-dark-yellow: var(--bg-dark-yellow);
 
 
     --color-bg-dark-grey: var(--bg-dark-grey);
@@ -40,16 +41,18 @@
     --ff : var(font-family);
 }
 
+
+
 :root {
   --bg-blue: #79B0E0;
   --bg-dark-blue: #2B49AD;
   --bg-yellow: #FFE18D;
+  --bg-dark-yellow  : #A76B0B;
+  --bg-grey: #D6D6D6;
   --bg-dark-grey: #4D4A40;
-  --bg-grey: #D9D9D9;
   font-family: 'Marianne', sans-serif;
 
 }
-
 
 
 @font-face {

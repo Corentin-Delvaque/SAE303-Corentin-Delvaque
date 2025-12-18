@@ -54,17 +54,15 @@
     </section>
 
     <!-- Section 2 -->
-    <section class="grid grid-cols-1 grid-rows-1 h-210 bg-bg-blue">
+    <section class="overflow-visible relative grid grid-cols-1 grid-rows-1 h-fit bg-bg-blue">
 
-
-      <h1
-        class="z-10 col-span-full row-span-full justify-self-start text-center self-center font-extrabold text-4xl md:text-7xl lg:text-7xl max-w-350 ml-10 lg:ml-40">
+      <h1 class="z-20 col-span-full row-span-full justify-self-start text-left font-extrabold text-4xl md:text-7xl lg:text-7xl max-w-350 pl-10 lg:pl-40 pb-100 mr-20"> 
         50 milliards de tonnes de sable extraites chaque année</h1>
 
 
       <!-- transition piles de sables -->
-      <section class="col-span-full row-span-full justify-self-end -mt-145 w-full">
-        <img class="w-full h-auto object-cover" src="./src/assets/sand-pile-transition.png" alt="Transition sable">
+      <section class="z-10 col-span-full row-span-full justify-self-end w-full">
+        <img class="pointer-events-none absolute bottom-50 lg:bottom-100 left-1/2 -translate-x-1/2 translate-y-1/2 w-full h-auto object-cover" src="./src/assets/sand-pile-transition.png" alt="Transition sable">
       </section>
 
     </section>
@@ -72,26 +70,26 @@
 
 
 
-
+    
     <!-- Section 3 -->
-    <section class="grid grid-cols-1 grid-rows-1 bg-bg-yellow h-fit">
+    <section class="relative grid grid-cols-1 grid-rows-1 bg-bg-yellow h-fit">
 
 
       <!-- route -->
-      <section class="col-span-full row-span-full justify-self-end mt-0 w-full">
+      <section class="z-10 col-span-full row-span-full justify-self-end  max-h-800 w-full">
         <img class="w-full h-auto object-cover" src="./src/assets/road.png" alt="route">
       </section>
 
 
       <!-- maison -->
-      <section class="col-span-full row-span-full justify-self-end mt-100">
+      <section class="z-10 col-span-full row-span-full justify-self-end mt-100">
         <img class="w-full h-auto object-cover" src="./src/assets/house.png" alt="Maison">
       </section>
 
 
       <!-- Text section -->
       <section
-        class="col-span-full row-span-full flex lg:flex-row w-full flex-col gap-10 lg:justify-between px-40 pb-100 pt-220 spm:pt240 md:pt-270 lg:pt-300">
+        class="col-span-full row-span-full flex lg:flex-row w-full flex-col gap-10 lg:justify-between px-40 pb-100 pt-220 spm:pt240 md:pt-270 lg:pt-300 xl:pt-400">
         <section class="">
           <p class="text-xl lg:text-5xl font-bold">30000 Tonnes</p>
           <p class="text-xl lg:text-4xl">Un kilomètre d'autoroute</p>
@@ -104,16 +102,15 @@
 
 
       <!-- Titre -->
-      <h1 class="z-10 col-span-full row-span-full justify-self-start text-left font-extrabold text-4xl md:text-5xl lg:text-7xl max-w-350 ml-10 lg:ml-40 pt-370">D'ou viennent toutes ces tonnes de sable?</h1>
+      <h1 class="z-10 col-span-full row-span-full justify-self-start text-left font-extrabold text-4xl mr-30 md:text-5xl lg:text-7xl max-w-300 ml-10 lg:ml-40 pt-370 lg:pt-400  xl:pt-500">D'ou viennent toutes ces tonnes de sable?</h1>
 
 
       <!-- transition piles de roche -->
-      <section class="col-span-full row-span-full justify-self-end mt-300 h-350">
-        <img class="w-full h-auto object-cover" src="./src/assets/rock-pile-transition.png" alt="Transition roche">
+      <section class="col-span-full row-span-full w-full justify-self-end mt-300 h-350">
+        <img class="pointer-events-none absolute bottom-50 lg:bottom-100 xl:bottom-170 left-1/2 -translate-x-1/2 translate-y-1/2  w-full h-auto object-cover" src="./src/assets/rock-pile-transition.png" alt="Transition roche">
       </section>
 
     </section>
-
 
 
 
@@ -124,7 +121,7 @@
 
 
       <!-- text box -->
-      <section class="col-span-full row-span-full flex flex-col pb-100 px-10 lg:px-40 pt-40 text-white gap-20">
+      <section class="z-10 col-span-full row-span-full flex flex-col pb-100 px-10 lg:px-40 pt-40 text-white gap-20">
         <section class="justify-end text-right">
           <p class="lg:text-7xl text-5xl font-bold"> 98%</p>
           <p class="lg:text-4xl text-xl">du sable dans la construction provient de massifs rocheux</p>
@@ -138,7 +135,7 @@
 
       <!-- transition wave small -->
       <section class="col-span-full row-span-full justify-self-end w-full mt-130">
-        <img class="w-full h-auto object-cover" src="./src/assets/small-wave.png" alt="Transition vague petite">
+        <img class="z-10 w-full h-auto object-cover" src="./src/assets/small-wave.png" alt="Transition vague petite">
       </section>
 
 
@@ -166,11 +163,10 @@
       </section>
 
 
-      <!-- Transition big wave -->
-      <section class="z-20 col-span-full row-span-full justify-self-end w-full mt-300">
+      <!--Lottie: Transition big wave -->
+      <section class="z-20 col-span-full row-span-full justify-self-end w-full mt-300 overflow-clip">
         <dotlottie-wc src="https://lottie.host/81cd22a3-d44f-4681-a8be-3dd3101f06d9/FoEViopkZA.lottie"
           class="w-screen h-screen object-cover" autoplay loop></dotlottie-wc>
-
       </section>
 
     </section>
@@ -187,7 +183,7 @@
 
 
       <!-- Fish deco -->
-      <section class="z-30 col-span-full row-span-full  w-20 justify-self-end -mt-110 mr-50">
+      <section class="z-30 col-span-full row-span-full  w-20 justify-self-end -mt-140 mr-10 md:mr-20 lg:mr-20">
         <img class="w-full h-auto object-cover" src="./src/assets/fish.png" alt="fish deco">
       </section>
 
@@ -238,7 +234,7 @@
 
       <!-- Titre + txt -->
       <h1 class="z-10 col-span-full row-span-full justify-self-start text-left font-extrabold text-5xl lg:text-8xl max-w-400 pl-20 lg:pl-40 pt-50">Mais alors, ou est utilisé le sable extrait des plages?</h1>
-      <p class="z-10 col-span-full row-span-full text-left font-bold text-2xl lg:text-4xl max-w-400 pl-50 md:pl-85 lg:pl-200 pt-150">59 % de ce sable est utilisé dans la fabrication de béton</p>
+      <p class="z-10 col-span-full row-span-full text-left font-bold text-2xl lg:text-4xl max-w-400 pl-50 md:pl-80 lg:pl-200 pt-150">59 % de ce sable est utilisé dans la fabrication de béton</p>
 
 
       <!-- transition béton -->

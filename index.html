@@ -117,7 +117,7 @@
 
 
     <!-- Section 4 -->
-    <section class="grid grid-cols-1 grid-rows-1 bg-bg-dark-grey h-fit">
+    <section class="relative grid grid-cols-1 grid-rows-1 bg-bg-dark-grey h-fit">
 
 
       <!-- text box -->
@@ -134,14 +134,14 @@
 
 
       <!-- transition wave small -->
-      <section class="z-10 col-span-full row-span-full justify-self-end w-full mt-130">
-        <img class="w-full h-auto object-cover" src="./assets/small-wave.png" alt="Transition vague petite">
+      <section class="z-10 col-span-full row-span-full justify-self-end w-full">
+        <img class="absolute bottom-490 w-full h-auto object-cover" src="./assets/small-wave.png" alt="Transition vague petite">
       </section>
 
 
       <!-- plage -->
       <section class="z-20 col-span-full row-span-full justify-self-end mt-190 w-full">
-        <img class="w-full h-auto object-cover" src="./assets/beach.png" alt="plage">
+        <img class="absolute top-190 w-full h-auto object-cover" src="./assets/beach.png" alt="plage">
       </section>
 
 
@@ -159,12 +159,15 @@
 
 
       <!-- Ceci sert à rendre le fond de plage jaune avant la grande vague -->
-      <section class="z-10 col-span-full row-span-full justify-self-end mt-250 w-full bg-bg-yellow">
+      <section class="absolute top-205 h-200 z-10 col-span-full row-span-full justify-self-end w-full bg-bg-yellow">
       </section>
-
-
+  
+      <!-- Ceci sert à rendre le fond de mer avant le lottie-->
+      <section class="absolute top-455 h-250 z-10 col-span-full row-span-full justify-self-end w-full bg-bg-dark-blue">
+      </section>
+  
       <!--Lottie: Transition big wave -->
-      <section class="z-20 col-span-full row-span-full justify-self-end w-full mt-300 overflow-clip">
+      <section class="z-20 col-span-full row-span-full justify-self-end w-full mt-285 overflow-clip">
         <dotlottie-wc src="https://lottie.host/81cd22a3-d44f-4681-a8be-3dd3101f06d9/FoEViopkZA.lottie"
           class="w-screen h-screen object-cover" autoplay loop></dotlottie-wc>
       </section>
@@ -190,6 +193,7 @@
 
       <!-- card container -->
       <section class="flex flex-col px-5 lg:px-40 py-100 gap-10 z-20 col-span-full row-span-full text-center -mt-270">
+        
         <section class="bg-white rounded-xl p-5 opacity-80">
           <p class="text-xl lg:text-3xl">75 à 90 % des plages reculent dans le monde.</p>
         </section>
@@ -202,12 +206,13 @@
       </section>
 
 
+      <!-- quizz -->
       <section class="col-span-full row-span-full  flex flex-col gap-5">
+
         <!-- quizz question Carded text-->
         <section class="z-20  justify-self-start mx-10 lg:mx-40 text-center bg-white rounded-xl h-fit w-fit opacity-80 p-10">
           <p class="text-2xl lg:text-4xl font-bold">Quel est le pourcentage de sable utilisable à des fins industrielles ?</p>
         </section>
-
 
         <!-- Text section quizz -->
         <section class=" z-20 justify-self-start text-left w-fit px-10 lg:px-40 text-xl lg:text-3xl font-bold gap-5 flex flex-col">
@@ -216,10 +221,13 @@
           <checkbox class="bg-white rounded-xl p-5 opacity-80">25%</checkbox>
         </section>
 
+
         <section class="flex flex-col mx-10 lg:mx-40">
           <p class="text-xl font-bold">Réponse:</p>
           <p class="bg-white text-2xl rounded-xl w-fit p-5 opacity-80">Seulement 5% !</p>
         </section>
+
+        
       </section>
     </section>
 

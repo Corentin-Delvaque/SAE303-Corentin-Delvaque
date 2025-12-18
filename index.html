@@ -89,23 +89,22 @@
       </section>
 
 
-      <!-- Text section -->
-      <section class="col-span-full row-span-full flex w-full flex-col gap-30 lg:flex-row  px-40 pb-100 pt-400">
-        <section class="">
-          <p class="text-xl lg:text-5xl font-bold">30000 Tonnes</p>
-          <p class="text-xl lg:text-4xl">Un kilomètre d'autoroute</p>
+      <!-- section Text + titre -->
+      <section class="col-span-full row-span-full flex flex-col gap-50 px-40 pt-430 ">
+        <section class="flex w-full flex-col gap-10 lg:flex-row">
+          <section class="">
+            <p class="text-xl lg:text-5xl font-bold">30000 Tonnes</p>
+            <p class="text-xl lg:text-4xl">Un kilomètre d'autoroute</p>
+          </section>
+          <section>
+            <p class="text-xl lg:text-5xl font-bold">200 Tonnes</p>
+            <p class="text-xl lg:text-4xl">Une maison de taille moyenne</p>
+          </section>
         </section>
-        <section>
-          <p class="text-xl lg:text-5xl font-bold">200 Tonnes</p>
-          <p class="text-xl lg:text-4xl">Une maison de taille moyenne</p>
-        </section>
+
+        <!-- Titre -->
+        <h1 class="z-10 col-span-full row-span-full justify-self-start text-left font-extrabold text-4xl md:text-5xl lg:text-7xl max-w-300">D'ou viennent toutes ces tonnes de sable?</h1>
       </section>
-
-      <!-- Titre -->
-      <h1
-        class="z-10 col-span-full row-span-full justify-self-start text-left font-extrabold text-4xl mr-30 md:text-5xl lg:text-7xl max-w-300 ml-10 lg:ml-40 pt-550 md:pt-550 lg:pt-400  xl:pt-450">
-        D'ou viennent toutes ces tonnes de sable?</h1>
-
 
       <!-- transition piles de roche -->
       <section class="col-span-full row-span-full w-full justify-self-end mt-300 h-350">
@@ -115,8 +114,6 @@
       </section>
 
     </section>
-
-
 
 
     <!-- Section 4 -->
@@ -142,43 +139,45 @@
     </section>
 
 
-
-
     <!-- Section 4 bis -->
     <section class="relative grid grid-cols-1 grid-rows-1 bg-bg-yellow h-fit">
 
+
       <!-- plage -->
-      <section class="z-20 col-span-full row-span-full justify-self-end w-full">
+      <section class="z-20 col-span-full row-span-full justify-self-end w-full h-fit">
         <img class="absolute w-full h-auto object-cover 2xl:-top-40 xl:-top-30 lg:-top-20 md:-top-15 sm:-top-10 -top-10  " src="./assets/beach.png" alt="plage">
       </section>
 
 
-      <!-- voleur -->
-      <section class="z-20 col-span-full row-span-full justify-self-end mt-190">
-        <img class="w-full h-auto object-cover" src="./assets/thief.png" alt="voleur">
-      </section>
+      <!-- Section container voleur + text vol -->
+      <section class="z-20 h-fit col-span-full row-span-full flex flex-col lg:flex-row-reverse  px-10 lg:px-40 gap-5 lg:gap-20 ">
+        <!-- voleur -->
+        <section class="justify-self-end ">
+          <img class="w-full h-auto object-cover" src="./assets/thief.png" alt="voleur">
+        </section>
 
 
-      <!-- Text section -->
-      <section class="z-20 col-span-full row-span-full justify-self-start text-left max-w-300 pl-10 lg:pl-40 pt-250">
-        <p class="lg:text-7xl text-5xl font-bold">60 à 70%</p>
-        <p class="lg:text-4xl text-xl">Du sable aurait été extrait illégalement au Bangladesh</p>
-      </section>
-
-
-      <!--Lottie: Transition big wave -->
-      <section class="z-20 col-span-full row-span-full justify-self-end w-full mt-285 overflow-visible">
-        <dotlottie-wc src="https://lottie.host/81cd22a3-d44f-4681-a8be-3dd3101f06d9/FoEViopkZA.lottie"
-          class="w-full h-500 object-cover" autoplay loop></dotlottie-wc>
+        <!-- Text section -->
+        <section class="z-20 justify-self-start text-left max-w-300">
+          <p class="lg:text-7xl text-5xl font-bold">60 à 70%</p>
+          <p class="lg:text-4xl text-xl">Du sable aurait été extrait illégalement au Bangladesh</p>
+        </section>
       </section>
 
     </section>
+    <!-- _____________________________________________________________________________________________________________________________________________________________________________________________________________________________ -->
 
 
+    <!-- Section 4 bis bis: Lottie -->
+    <section class="col-span-full row-span-full w-full bg-bg-yellow overflow-hidden">
+      <!--Lottie: Transition big wave -->
+      <dotlottie-wc src="https://lottie.host/81cd22a3-d44f-4681-a8be-3dd3101f06d9/FoEViopkZA.lottie"
+        class="w-full h-300 object-cover" autoplay loop>
+      </dotlottie-wc>
+    </section>
 
     <!-- section 5 -->
     <section class="grid grid-cols-1 grid-rows-1 bg-sea-sand h-fit">
-
 
       <!-- Wave effect bg -->
       <section class="z-20 col-span-full row-span-full justify-self-end w-full -mt-210 opacity-20">
@@ -206,8 +205,26 @@
             régénération</p>
         </section>
       </section>
+    </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <!-- Section 5 bis: quizz -->
+    <section>
       <!-- quizz -->
       <section class="col-span-full row-span-full  flex flex-col gap-5">
 

@@ -8,6 +8,8 @@
   <link href="./src/style.css" rel="stylesheet" type="text/css" />
   <link rel="icon" href="./assets/ademe-logo-2022-1.svg" type="image/x-icon">
   <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 </head>
 
@@ -40,7 +42,7 @@
 
       <!-- Titre principal -->
       <h1
-        class="z-10 col-span-full row-span-full justify-self-start pt-100 font-extrabold text-4xl md:text-7xl lg:text-9xl max-w-200 ml-20 lg:ml-40 lg:pt-50 ">
+        class="z-10 col-span-full row-span-full justify-self-start pt-100 font-extrabold text-4xl md:text-7xl lg:text-9xl max-w-200 ml-20 lg:ml-40 lg:pt-50 titre-principal">
         Le sable une ressource fragile ?</h1>
 
 
@@ -55,10 +57,10 @@
     <!-- Section 2 -->
     <section class="overflow-visible relative grid grid-cols-1 grid-rows-1 h-fit bg-bg-blue">
 
-      <h1
+      <div
         class="z-20 col-span-full row-span-full justify-self-start text-left font-extrabold text-4xl md:text-7xl lg:text-7xl max-w-350 pl-10 lg:pl-40 pb-100 mr-20">
-        50 milliards de tonnes de sable extraites chaque année</h1>
-
+        <h1 class="sous-titre">50 milliards de tonnes de sable extraites chaque année</h1>
+      </div>
 
       <!-- transition piles de sables -->
       <section class="z-10 col-span-full row-span-full justify-self-end w-full">
@@ -85,25 +87,28 @@
 
       <!-- maison -->
       <section class="z-10 col-span-full row-span-full justify-self-end mt-100">
-        <img class="w-full h-auto object-cover" src="./assets/house.png" alt="Maison">
+        <img class="w-full h-auto object-cover maison" src="./assets/house.png" alt="Maison">
       </section>
 
 
       <!-- section Text + titre -->
       <section class="col-span-full row-span-full flex flex-col gap-50 px-40 pt-430 ">
         <section class="flex w-full flex-col gap-10 lg:flex-row">
-          <section class="">
+          <section class="text-section1">
             <p class="text-xl lg:text-5xl font-bold">30000 Tonnes</p>
             <p class="text-xl lg:text-4xl">Un kilomètre d'autoroute</p>
           </section>
-          <section>
+          <section class="text-section2">
             <p class="text-xl lg:text-5xl font-bold">200 Tonnes</p>
             <p class="text-xl lg:text-4xl">Une maison de taille moyenne</p>
           </section>
         </section>
 
         <!-- Titre -->
-        <h1 class="z-10 col-span-full row-span-full justify-self-start text-left font-extrabold text-4xl md:text-5xl lg:text-7xl max-w-300">D'ou viennent toutes ces tonnes de sable?</h1>
+        <div
+          class="z-10 col-span-full row-span-full justify-self-start text-left font-extrabold text-4xl md:text-5xl lg:text-7xl max-w-300">
+          <h1 class="titre">D'ou viennent toutes ces tonnes de sable?</h1>
+        </div>
       </section>
 
       <!-- transition piles de roche -->
@@ -120,11 +125,11 @@
     <section class="relative grid grid-cols-1 grid-rows-1 bg-bg-dark-grey h-fit pb-70 xl:pb-130 2xl:pb-150">
       <!-- text box -->
       <section class="z-10 col-span-full row-span-full flex flex-col px-10 pt-10 lg:px-40  text-white gap-20">
-        <section class="justify-end text-right">
+        <section class="justify-end text-right text-box-right">
           <p class="lg:text-7xl text-5xl font-bold"> 98%</p>
           <p class="lg:text-4xl text-xl">du sable dans la construction provient de massifs rocheux</p>
         </section>
-        <section>
+        <section class="justify-end text-left text-box-left">
           <p class="lg:text-7xl text-5xl font-bold"> 40 à 45 % </p>
           <p class="lg:text-4xl text-xl">du sable extrait au Maroc est volé sur les plages.</p>
         </section>
@@ -133,8 +138,7 @@
 
       <!-- transition wave small -->
       <section class="z-10 col-span-full row-span-full justify-self-end w-full">
-        <img class="absolute bottom-0 w-full object-cover" src="./assets/small-wave.png"
-          alt="Transition vague petite">
+        <img class="absolute bottom-0 w-full object-cover" src="./assets/small-wave.png" alt="Transition vague petite">
       </section>
     </section>
 
@@ -145,20 +149,23 @@
 
       <!-- plage -->
       <section class="z-20 col-span-full row-span-full justify-self-end w-full h-fit">
-        <img class="absolute w-full h-auto object-cover 2xl:-top-40 xl:-top-30 lg:-top-20 md:-top-15 sm:-top-10 -top-10  " src="./assets/beach.png" alt="plage">
+        <img
+          class="absolute w-full h-auto object-cover 2xl:-top-40 xl:-top-30 lg:-top-20 md:-top-15 sm:-top-10 -top-10  "
+          src="./assets/beach.png" alt="plage">
       </section>
 
 
       <!-- Section container voleur + text vol -->
-      <section class="z-20 h-fit col-span-full row-span-full flex flex-col lg:flex-row-reverse  px-10 lg:px-40 gap-5 lg:gap-20 ">
+      <section
+        class="z-20 h-fit col-span-full row-span-full flex flex-col lg:flex-row-reverse  px-10 lg:px-40 gap-5 lg:gap-20 ">
         <!-- voleur -->
-        <section class="justify-self-end ">
+        <section class="justify-self-end voleur">
           <img class="w-full h-auto object-cover" src="./assets/thief.png" alt="voleur">
         </section>
 
 
         <!-- Text section -->
-        <section class="z-20 justify-self-start text-left max-w-300">
+        <section class="z-20 justify-self-start text-left max-w-300 text-box-left2">
           <p class="lg:text-7xl text-5xl font-bold">60 à 70%</p>
           <p class="lg:text-4xl text-xl">Du sable aurait été extrait illégalement au Bangladesh</p>
         </section>
@@ -197,13 +204,13 @@
 
       <!-- card container -->
       <section class="z-50 flex flex-col px-5 lg:px-40 py-100 gap-10 col-span-full row-span-full text-center -mt-270">
-        <section class="bg-white rounded-xl p-5 opacity-80">
+        <section class="bg-white rounded-xl p-5 opacity-80 card ">
           <p class="text-xl lg:text-3xl">75 à 90 % des plages reculent dans le monde.</p>
         </section>
-        <section class="bg-white rounded-xl p-5 opacity-80">
+        <section class="bg-white rounded-xl p-5 opacity-80 card2">
           <p class="text-xl lg:text-3xl">9 plages sur 10 sont en voie de disparition en Floride</p>
         </section>
-        <section class="bg-white rounded-xl p-5 opacity-80">
+        <section class="bg-white rounded-xl p-5 opacity-80 card3">
           <p class="text-xl lg:text-3xl">25 % du sable exploitable est retenu par des barrages, ce qui empêche la
             régénération</p>
         </section>
@@ -229,8 +236,10 @@
       <section class="flex flex-col gap-5">
 
         <!-- quizz question Carded text-->
-        <section class="z-20 justify-self-start self-center mx-10 lg:mx-40 text-center bg-white rounded-xl h-fit w-fit opacity-80 p-10 mb-50">
-          <p class="text-2xl lg:text-4xl font-bold">Quel est le pourcentage de sable utilisable à des fins industrielles ?</p>
+        <section
+          class="z-20 justify-self-start self-center mx-10 lg:mx-40 text-center bg-white rounded-xl h-fit w-fit opacity-80 p-10 mb-50">
+          <p class="text-2xl lg:text-4xl font-bold">Quel est le pourcentage de sable utilisable à des fins industrielles
+            ?</p>
         </section>
 
         <!-- Text section quizz -->
@@ -261,8 +270,12 @@
     <section class="relative grid grid-cols-1 grid-rows-1 bg-bg-yellow h-300">
 
       <!-- Titre + txt -->
-      <h1 class="z-10 col-span-full row-span-full justify-self-start text-left font-extrabold text-5xl lg:text-8xl pl-20 lg:pl-40 pt-50 xl:pl-230 "> Mais alors, ou est utilisé le sable extrait des plages?</h1>
-      <p class="z-10 col-span-full row-span-full text-left font-bold text-2xl lg:text-4xl max-w-400 pl-50 md:pl-80 lg:pl-230 pt-180"> 59 % de ce sable est utilisé dans la fabrication de béton</p>
+      <h1
+        class="z-10 col-span-full row-span-full justify-self-start text-left font-extrabold text-5xl lg:text-8xl pl-20 lg:pl-40 pt-50 xl:pl-230 ">
+        Mais alors, ou est utilisé le sable extrait des plages?</h1>
+      <p
+        class="z-10 col-span-full row-span-full text-left font-bold text-2xl lg:text-4xl max-w-400 pl-50 md:pl-80 lg:pl-230 pt-180">
+        59 % de ce sable est utilisé dans la fabrication de béton</p>
 
 
       <!-- transition béton -->
@@ -281,10 +294,10 @@
       </section>
       <section class="z-10 col-span-full row-span-full justify-self-start mt-0 ml-80">
 
-      <dotlottie-wc class="z-10 lg:w-300 w-full h-min object-cover opacity-40 -ml-5"
-        src="https://lottie.host/c118ade8-1d81-4769-b469-59bab97fde78/IhTUQmaTQy.lottie" autoplay loop></dotlottie-wc>
+        <dotlottie-wc class="z-10 lg:w-300 w-full h-min object-cover opacity-40 -ml-5"
+          src="https://lottie.host/c118ade8-1d81-4769-b469-59bab97fde78/IhTUQmaTQy.lottie" autoplay loop></dotlottie-wc>
       </section>
-      
+
       <section class="z-15 col-span-full row-span-full justify-self-start mt-133 pl-80">
         <img class="w-l h-auto object-cover" src="./assets/chimney.png" alt="chimney">
       </section>
@@ -520,6 +533,7 @@
 
 
   </main>
+  <script src="index.js"></script>
 </body>
 
 </html>

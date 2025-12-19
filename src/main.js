@@ -1,4 +1,36 @@
+//import { gsap } from "gsap";
+//import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { DotLottie } from "@lottiefiles/dotlottie-web";
+
 gsap.registerPlugin(ScrollTrigger);
+
+const bigWaveLottie = new DotLottie({
+  canvas: document.querySelector("#bigwave"),
+  src: "https://lottie.host/81cd22a3-d44f-4681-a8be-3dd3101f06d9/FoEViopkZA.lottie",
+  autoplay: true,
+  loop: true,
+});
+
+const cloudLottie = new DotLottie({
+  canvas: document.querySelector("#cloud"),
+  src: "https://lottie.host/c118ade8-1d81-4769-b469-59bab97fde78/IhTUQmaTQy.lottie",
+  autoplay: true,
+  loop: true,
+});
+
+const pelleteuseLottie = new DotLottie({
+  canvas: document.querySelector("#pelleteuse"),
+  src: "https://lottie.host/9ea9af28-966d-4059-9bf5-e16a825d39d0/OVA1kZ1L94.lottie",
+  autoplay: true,
+  loop: true,
+});
+
+const betonLottie = new DotLottie({
+  canvas: document.querySelector("#beton"),
+  src: "https://lottie.host/be679607-6914-4a66-83e2-4fbf2b58c125/vx1mBfioVF.lottie",
+  autoplay: true,
+  loop: true,
+});
 
 gsap.fromTo(
   ".titre-principal",

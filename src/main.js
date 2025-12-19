@@ -40,7 +40,7 @@ gsap.fromTo(
     repeat: -1,
     yoyo: true,
     duration: 1.5,
-    delay: 0.5,
+    delay: 0,
   },
 );
 
@@ -58,7 +58,7 @@ gsap.fromTo(
       toggleActions: "play none none reverse",
     },
     duration: 1.5,
-    delay: 0.5,
+    delay: 0,
   },
 );
 
@@ -77,7 +77,7 @@ gsap.fromTo(
       toggleActions: "play none none reverse",
     },
     duration: 1,
-    delay: 0.5,
+    delay: 0,
   },
 );
 
@@ -96,7 +96,7 @@ gsap.fromTo(
       toggleActions: "play none none reset",
     },
     duration: 1.5,
-    delay: 1,
+    delay: 0.5,
   },
 );
 
@@ -115,7 +115,7 @@ gsap.fromTo(
       toggleActions: "play none none reset",
     },
     duration: 1.5,
-    delay: 0.5,
+    delay: 0,
   },
 );
 
@@ -134,7 +134,7 @@ gsap.fromTo(
       toggleActions: "play none none reverse",
     },
     duration: 1.5,
-    delay: 1,
+    delay: 0,
   },
 );
 
@@ -153,7 +153,7 @@ gsap.fromTo(
       toggleActions: "play none none reverse",
     },
     duration: 1.5,
-    delay: 1,
+    delay: 0,
   },
 );
 
@@ -172,7 +172,7 @@ gsap.fromTo(
       toggleActions: "play none none reverse",
     },
     duration: 1.5,
-    delay: 1,
+    delay: 0,
   },
 );
 
@@ -190,7 +190,7 @@ gsap.fromTo(
       markers: true,
       scrub: true,
     },
-    delay: 1,
+    delay: 0,
   },
 );
 
@@ -209,7 +209,7 @@ gsap.fromTo(
       toggleActions: "play none none reverse",
     },
     duration: 1.5,
-    delay: 1,
+    delay: 0,
   },
 );
 
@@ -229,7 +229,7 @@ gsap.fromTo(
       toggleActions: "play none none reverse",
     },
     duration: 1.5,
-    delay: 1,
+    delay: 0,
   },
 );
 
@@ -249,7 +249,7 @@ gsap.fromTo(
       toggleActions: "play none none reverse",
     },
     duration: 1.5,
-    delay: 1,
+    delay: 0,
   },
 );
 
@@ -269,6 +269,6 @@ gsap.fromTo(
       toggleActions: "play none none reverse",
     },
     duration: 1.5,
-    delay: 1,
+    delay: 0,
   },
 );

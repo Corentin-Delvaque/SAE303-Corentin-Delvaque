@@ -297,7 +297,6 @@ gsap.fromTo(
     opacity: 1,
     scrollTrigger: {
       trigger: ".quizz-answer",
-      markers: true,
       start: "top 80%",
       end: "bottom 20%",
 

@@ -1,5 +1,3 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(
@@ -173,26 +171,6 @@ gsap.fromTo(
     scale: 1,
     scrollTrigger: {
       trigger: ".text-box-left2",
-      start: "top 80%",
-      end: "bottom 20%",
-
-      toggleActions: "play none none reverse",
-    },
-    duration: 1.5,
-    delay: 1,
-  },
-);
-
-gsap.fromTo(
-  ".card",
-  { x: -1500, y: 0, scale: 1, opacity: 0 },
-  {
-    x: 0,
-    y: 0,
-    scale: 1,
-    opacity: 1,
-    scrollTrigger: {
-      trigger: ".card",
       start: "top 80%",
       end: "bottom 20%",
 

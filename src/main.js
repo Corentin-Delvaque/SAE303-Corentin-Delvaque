@@ -336,3 +336,85 @@ gsap.fromTo(
     delay: 0,
   },
 );
+
+gsap.fromTo(
+  ".bétonière",
+  { x: 1500, y: 0, scale: 1, opacity: 0 },
+  {
+    x: 0,
+    y: 0,
+    scale: 1,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".bétonière",
+      start: "top 50%",
+      end: "bottom 20%",
+
+      toggleActions: "play none none reverse",
+    },
+    duration: 1.5,
+    delay: 0,
+  },
+);
+
+gsap.fromTo(
+  ".gaz",
+  { x: 1500, y: 0, scale: 1, opacity: 0 },
+  {
+    x: 0,
+    y: 0,
+    scale: 1,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".gaz",
+      start: "top 50%",
+      end: "bottom 20%",
+
+      toggleActions: "play none none reverse",
+    },
+    duration: 1.5,
+    delay: 0,
+  },
+);
+
+gsap.fromTo(
+  ".gravats",
+  { scale: 1 },
+  {
+    scale: 1.1,
+    repeat: -1,
+    yoyo: true,
+    duration: 1.5,
+    delay: 0,
+  },
+);
+
+gsap.fromTo(
+  ".soleil",
+  { x: 0, y: -1000, scale: 5 },
+  {
+    x: 0,
+    y: 0,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".soleil",
+      start: "top 60%",
+      end: "bottom 50% ",
+      scrub: true,
+    },
+
+    delay: 0,
+  },
+);
+
+gsap.fromTo(
+  ".corentin",
+  { rotation: 0 },
+  {
+    rotation: 720,
+    repeat: -1,
+    repeatDelay: 0.75,
+    duration: 1.5,
+    delay: 0,
+  },
+);

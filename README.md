@@ -1,5 +1,5 @@
 _________________________________________________________________________________________
-Disclaimer!
+**Disclaimer!**
 
 Dans le cadre de notre collaboration avec l’Agence de la transition écologique, nous modernisons et créons des supports numériques das l’objectif d’informer et
 sensibiliser le public sur des thèmes cruciaux pour l'avenir de notre planète : ici la gestion des ressources.

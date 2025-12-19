@@ -244,7 +244,6 @@ gsap.fromTo(
       trigger: ".card2",
       start: "top 80%",
       end: "bottom 20%",
-      pin: true,
 
       toggleActions: "play none none reverse",
     },

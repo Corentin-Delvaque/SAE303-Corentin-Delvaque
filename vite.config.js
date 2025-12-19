@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: "/SAE303-Corentin-Delvaque",
+  base: "/SAE303-Corentin-Delvaque/", // <-- ajouter le slash final
   theme: {
     extend: {
       fontFamily: {

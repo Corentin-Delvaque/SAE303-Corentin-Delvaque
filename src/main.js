@@ -187,7 +187,6 @@ gsap.fromTo(
       trigger: ".voleur",
       start: "top 80%",
       end: "bottom 20% ",
-      markers: true,
       scrub: true,
     },
     delay: 0,
@@ -245,6 +244,7 @@ gsap.fromTo(
       trigger: ".card2",
       start: "top 80%",
       end: "bottom 20%",
+      pin: true,
 
       toggleActions: "play none none reverse",
     },
@@ -272,3 +272,26 @@ gsap.fromTo(
     delay: 0,
   },
 );
+
+gsap.fromTo(
+  ".quizz-answer",
+  { x: -1500, y: 0, scale: 1, opacity: 0 },
+  {
+    x: 0,
+    y: 0,
+    scale: 1,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".quizz-answer",
+      markers: true,
+      start: "top 80%",
+      end: "bottom 20%",
+
+      toggleActions: "play none none reverse",
+    },
+    duration: 1.5,
+    delay: 0,
+  },
+);
+
+

@@ -273,6 +273,21 @@ gsap.fromTo(
 );
 
 gsap.fromTo(
+  ".quizz-options",
+  { x: 0, y: 0, scale: 1 },
+  {
+    x: 0,
+    y: 10,
+    scale: 1,
+
+    duration: 1.5,
+    delay: 0,
+    yoyo: true,
+    repeat: -1,
+  },
+);
+
+gsap.fromTo(
   ".quizz-answer",
   { x: -1500, y: 0, scale: 1, opacity: 0 },
   {
@@ -292,5 +307,3 @@ gsap.fromTo(
     delay: 0,
   },
 );
-
-

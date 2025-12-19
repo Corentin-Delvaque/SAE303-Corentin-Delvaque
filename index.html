@@ -93,7 +93,7 @@
 
 
       <!-- section Text + titre -->
-      <section class="col-span-full row-span-full flex flex-col gap-50 px-40 pt-430 ">
+      <section class="col-span-full row-span-full flex flex-col gap-150 px-40 pt-300 ">
         <section class="flex w-full flex-col gap-10 lg:flex-row">
           <section class="text-section1">
             <p class="text-xl lg:text-5xl font-bold">30000 Tonnes</p>
@@ -107,7 +107,7 @@
 
         <!-- Titre -->
         <div
-          class="z-10 col-span-full row-span-full justify-self-start text-left font-extrabold text-4xl md:text-5xl lg:text-7xl max-w-300">
+          class="z-10 col-span-full row-span-full justify-self-start text-left font-extrabold text-4xl md:text-5xl lg:text-7xl max-w-250 pr-20">
           <h1 class="titre">D'ou viennent toutes ces tonnes de sable?</h1>
         </div>
       </section>
@@ -238,25 +238,37 @@
 
         <!-- quizz question Carded text-->
         <section
-          class="z-20 justify-self-start self-center mx-10 lg:mx-40 text-center bg-white rounded-xl h-fit w-fit opacity-80 p-10 mb-50">
-          <p class="text-2xl lg:text-4xl font-bold">Quel est le pourcentage de sable utilisable à des fins industrielles
-            ?</p>
+          class="z-20 justify-self-start self-center mx-10 lg:mx-40 text-center bg-white rounded-xl h-fit w-fit opacity-80 p-10 mb-20">
+          <p class="text-2xl lg:text-4xl font-bold">Quel est le pourcentage de sable utilisable à des fins industrielles?</p>
         </section>
 
         <!-- Text section quizz -->
-        <section
-          class="flex flex-row z-20 gap-50 self-center text-left w-fit px-10 lg:px-40 text-xl lg:text-3xl font-bold ">
-          <checkbox class="bg-white rounded-xl p-5 opacity-80">5%</checkbox>
-          <checkbox class="bg-white rounded-xl p-5 opacity-80">15%</checkbox>
-          <checkbox class="bg-white rounded-xl p-5 opacity-80">25%</checkbox>
+        <section class="flex flex-row z-20 gap-10 self-center text-left w-fit px-10 lg:px-40 text-xl lg:text-3xl font-bold">
+          <label class="cursor-pointer">
+            <input type="checkbox" class="peer hidden" />
+            <div class="bg-white rounded-xl p-5 opacity-80 peer-checked:bg-green-500 peer-checked:text-white transition">5%</div>
+          </label>
+        
+          <label class="cursor-pointer">
+            <input type="checkbox" class="peer hidden" />
+            <div class="bg-white rounded-xl p-5 opacity-80 peer-checked:bg-green-500 peer-checked:text-white transition">15%</div>          </label>
+          </label>
+
+          <label class="cursor-pointer">
+            <input type="checkbox" class="peer hidden" />
+            <div class="bg-white rounded-xl p-5 opacity-80 peer-checked:bg-green-500 peer-checked:text-white transition">25%</div>
+          </label>
         </section>
 
+
+
+
+        <!-- Réponse -->
 
         <section class="flex flex-col mx-10 lg:mx-40 mt-100">
           <p class="text-xl font-bold">Réponse:</p>
           <p class="bg-white text-2xl rounded-xl w-fit p-5 opacity-80">Seulement 5% !</p>
         </section>
-
 
       </section>
     </section>
